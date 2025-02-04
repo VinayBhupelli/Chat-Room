@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebSocket Chat</title>
+  <link rel="icon" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>WebSocket Chat</h1>
+    <!-- Display connection info (e.g., welcome message, room number) -->
+    <div id="roomInfo"></div>
+    <!-- Chat messages are displayed here -->
+    <div id="messageBox"></div>
+    <!-- Form for joining or creating a room -->
+    <div id="usernameInput" class="input-container">
+      <input type="text" id="roomID" placeholder="Enter Room ID" />
+      <input type="text" id="username" placeholder="Enter your Username" />
+      <button id="joinRoomButton">Join Room</button>
+      <button id="createRoomButton">Create Room</button>
+    </div>
+    <!-- Chat box (hidden until connected) -->
+    <div id="chatBox" class="chat-box" style="display: none;">
+      <input type="text" id="messageInput" placeholder="Enter your message" />
+      <button id="sendButton">Send</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
