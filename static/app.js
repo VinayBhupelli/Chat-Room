@@ -1,6 +1,7 @@
 let socket;
 let roomID;
 let username;
+
 document.getElementById("joinRoomButton").addEventListener("click", connectToRoom);
 document.getElementById("createRoomButton").addEventListener("click", connectToRoom);
 
